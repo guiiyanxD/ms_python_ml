@@ -1,0 +1,36 @@
+type Query {
+  modelA(params: ModelAParams): ModelAResponse
+  modelB(params: ModelBParams): ModelBResponse
+  modelC(params: ModelCParams): ModelCResponse
+  modelDImage(image: Upload!): ModelDImageResponse
+}
+
+input ModelAParams {
+  param1: String
+  param2: Int
+}
+
+type ModelAResponse {
+  result: String
+}
+
+input ModelBParams {
+  param1: String
+}
+
+type ModelBResponse {
+  result: String
+}
+
+input ModelCParams {
+  param1: String
+  param2: Float
+}
+
+type ModelCResponse {
+  result: String
+}
+
+type ModelDImageResponse {
+  result: String
+}
